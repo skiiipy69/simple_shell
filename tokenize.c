@@ -34,7 +34,7 @@ void token_size(data_of_program *data)
 		exit(errno);
 	}
 	a = 0;
-	data->tokens[a] = str_duplicate(_strtok(data->input_line, delimiter));
+	data->tokens[a] = str_duplicate(_str_tok(data->input_line, delimiter));
 	data->command_name = str_duplicate(data->tokens[0]);
 	while (data->tokens[a++])
 	{
