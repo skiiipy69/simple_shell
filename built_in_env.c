@@ -1,11 +1,11 @@
 #include "shell.h"
 
 /**
- * builtin_env - shows the environment where the shell runs
+ * built_in_env - shows the environment where the shell runs
  * @data: struct for the program's data
  * Return: zero if sucess, or other number if its declared in the arguments
  */
-int builtin_env(data_of_program *data)
+int built_in_env(data_of_program *data)
 {
 	int i;
 	char cpname[50] = {'\0'};
