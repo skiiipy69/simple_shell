@@ -18,9 +18,7 @@
  * struct info- struct for the program's data
  *
  * @program_name: the name of the executable
-
- * @input_line: pointer to the input read for _get_line
- *
+ * @input_line: pointer to the input read for _get_line *
  * @command_name: pointer to the first command typed by the user
  *
  * @exec_counter: number of excecuted comands
@@ -102,5 +100,4 @@ int count_characters(char *string, char *character);
 int print_alias(data_of_program *data, char *alias);
 char *get_alias(data_of_program *data, char *alias);
 int set_alias(char *alias_string, data_of_program *data);
-
 #endif

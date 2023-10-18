@@ -80,7 +80,6 @@ int set_alias(char *alias_string, data_of_program *data)
 
 	if (alias_string == NULL ||  data->alias_list == NULL)
 		return (1);
-	
 	for (i = 0; alias_string[i]; i++)
 		if (alias_string[i] != '=')
 			buffer[i] = alias_string[i];
@@ -98,14 +97,13 @@ int set_alias(char *alias_string, data_of_program *data)
 			break;
 		}
 
-	
 	if (temp)
 	{
 		buffer_add(buffer, "=");
 		buffer_add(buffer, temp);
 		data->alias_list[j] = str_duplicate(buffer);
 	}
-	else 
+	else
 		data->alias_list[j] = str_duplicate(alias_string);
 	return (0);
 }

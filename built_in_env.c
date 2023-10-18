@@ -11,7 +11,6 @@ int built_in_env(data_of_program *data)
 	char cpname[50] = {'\0'};
 	char *var_copy = NULL;
 
-	
 	if (data->tokens[1] == NULL)
 		print_environ(data);
 	else
